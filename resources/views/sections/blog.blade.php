@@ -92,7 +92,7 @@
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
                         <a href="blog-single.html" class="block-20 rounded"
-                            style="background-image: url('{{ asset('assets/images/image_5.jpg') }}');">
+                            style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');">
                         </a>
                         <div class="text p-4">
                             <div class="meta mb-2">
@@ -109,7 +109,7 @@
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
                         <a href="blog-single.html" class="block-20 rounded"
-                            style="background-image: url('{{ asset('assets/images/image_6.jpg') }}');">
+                            style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');">
                         </a>
                         <div class="text p-4">
                             <div class="meta mb-2">

@@ -1,8 +1,9 @@
 @extends('layout.app')
+
 @section('content')
     <div class="hero-wrap">
         <div class="home-slider owl-carousel">
-            <div class="slider-item" style="background-image:url(images/bg_1.jpg);">
+            <div class="slider-item" style="background-image: url('{{ asset('assets/images/bg_1.jpg') }}');">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -17,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+            <div class="slider-item" style="background-image: url('{{ asset('assets/images/bg_2.jpg') }}');">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -32,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="slider-item" style="background-image:url(images/bg_3.jpg);">
+            <div class="slider-item" style="background-image: url('{{ asset('assets/images/bg_3.jpg') }}');">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -54,7 +55,7 @@
             <div class="row d-flex no-gutters">
                 <div class="col-md-6 d-flex">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
-                        style="background-image:url(images/about.jpg);">
+                        style="background-image: url('{{ asset('assets/images/about.jpg') }}');">
                     </div>
                 </div>
                 <div class="col-md-6 pl-md-5 py-md-5">
@@ -221,7 +222,9 @@
                                     <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="user-img"
+                                            style="background-image: url('{{ asset('assets/images/person_1.jpg') }}')">
+                                        </div>
                                         <div class="pl-3">
                                             <p class="name">Roger Scott</p>
                                             <span class="position">Marketing Manager</span>
@@ -238,7 +241,9 @@
                                     <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="user-img"
+                                            style="background-image: url('{{ asset('assets/images/person_2.jpg') }}')">
+                                        </div>
                                         <div class="pl-3">
                                             <p class="name">Roger Scott</p>
                                             <span class="position">Marketing Manager</span>
@@ -255,7 +260,9 @@
                                     <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                                        <div class="user-img"
+                                            style="background-image: url('{{ asset('assets/images/person_3.jpg') }}')">
+                                        </div>
                                         <div class="pl-3">
                                             <p class="name">Roger Scott</p>
                                             <span class="position">Marketing Manager</span>
@@ -272,7 +279,9 @@
                                     <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="user-img"
+                                            style="background-image: url('{{ asset('assets/images/person_1.jpg') }}')">
+                                        </div>
                                         <div class="pl-3">
                                             <p class="name">Roger Scott</p>
                                             <span class="position">Marketing Manager</span>
@@ -289,7 +298,9 @@
                                     <p class="mb-4">Far far away, behind the word mountains, far from the countries
                                         Vokalia and Consonantia, there live the blind texts.</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="user-img"
+                                            style="background-image: url('{{ asset('assets/images/person_2.jpg') }}')">
+                                        </div>
                                         <div class="pl-3">
                                             <p class="name">Roger Scott</p>
                                             <span class="position">Marketing Manager</span>
@@ -309,16 +320,16 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="img-faqs w-100">
-                        <div class="img mb-4 mb-sm-0" style="background-image:url(images/about-2.jpg);">
-                        </div>
-                        <div class="img img-2 mb-4 mb-sm-0" style="background-image:url(images/about-1.jpg);">
-                        </div>
+                        <div class="img mb-4 mb-sm-0"
+                            style="background-image: url('{{ asset('assets/images/about-2.jpg') }}');"></div>
+                        <div class="img img-2 mb-4 mb-sm-0"
+                            style="background-image: url('{{ asset('assets/images/about-1.jpg') }}');"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 pl-lg-5">
                     <div class="heading-section mb-5 mt-5 mt-lg-0">
                         <span class="subheading">FAQs</span>
-                        <h2 class="mb-3">Frequently Asks Questions</h2>
+                        <h2 class="mb-3">Frequently Asked Questions</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                             live the blind texts.</p>
                     </div>
@@ -330,7 +341,7 @@
                                         class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
                                         data-parent="#accordion" data-toggle="collapse" aria-expanded="true"
                                         aria-controls="collapseOne">
-                                        <p class="mb-0">How to fixed a problem?</p>
+                                        <p class="mb-0">How to fix a problem?</p>
                                         <i class="fa" aria-hidden="true"></i>
                                     </button>
                                 </h2>
@@ -385,7 +396,7 @@
                                     </button>
                                 </h2>
                             </div>
-                            <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="card-body py-3 px-0">
                                     <ol>
                                         <li>Far far away, behind the word mountains</li>
@@ -410,7 +421,7 @@
                                     </button>
                                 </h2>
                             </div>
-                            <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
                                 <div class="card-body py-3 px-0">
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and
                                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
@@ -436,8 +447,7 @@
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
                         <a href="blog-single.html" class="block-20 rounded"
-                            style="background-image: url('images/image_1.jpg');">
-                        </a>
+                            style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');"></a>
                         <div class="text p-4">
                             <div class="meta mb-2">
                                 <div><a href="#">March 31, 2020</a></div>
@@ -452,8 +462,7 @@
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
                         <a href="blog-single.html" class="block-20 rounded"
-                            style="background-image: url('images/image_2.jpg');">
-                        </a>
+                            style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');"></a>
                         <div class="text p-4">
                             <div class="meta mb-2">
                                 <div><a href="#">March 31, 2020</a></div>
@@ -468,8 +477,7 @@
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
                         <a href="blog-single.html" class="block-20 rounded"
-                            style="background-image: url('images/image_3.jpg');">
-                        </a>
+                            style="background-image: url('{{ asset('assets/images/image_3.jpg') }}');"></a>
                         <div class="text p-4">
                             <div class="meta mb-2">
                                 <div><a href="#">March 31, 2020</a></div>
@@ -483,8 +491,8 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
-
 
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
         <div class="container py-5">
@@ -519,7 +527,6 @@
                         <div class="text-center">
                             <span class="excerpt d-block">Personal</span>
                             <span class="price"><sup>$</sup> <span class="number">49</span> <sub>/mos</sub></span>
-
                             <ul class="pricing-text mb-5">
                                 <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
                                 <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
@@ -527,7 +534,6 @@
                                 <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
                                 <li><span class="fa fa-check mr-2"></span>Sales Management</li>
                             </ul>
-
                             <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
@@ -537,7 +543,6 @@
                         <div class="text-center">
                             <span class="excerpt d-block">Business</span>
                             <span class="price"><sup>$</sup> <span class="number">79</span> <sub>/mos</sub></span>
-
                             <ul class="pricing-text mb-5">
                                 <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
                                 <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
@@ -545,7 +550,6 @@
                                 <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
                                 <li><span class="fa fa-check mr-2"></span>Sales Management</li>
                             </ul>
-
                             <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
@@ -554,16 +558,15 @@
                     <div class="block-7">
                         <div class="text-center">
                             <span class="excerpt d-block">Ultimate</span>
-                            <span class="price"><sup>$</sup> <span class="number">109</span> <sub>/mos</sub></span>
-
+                            <span class="price"><sup>$</sup>$</sup> <span class="number">109</span>
+                                <sub>/mos</sub></span>
                             <ul class="pricing-text mb-5">
                                 <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
                                 <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
                                 <li><span class="fa fa-check mr-2"></span>Branding Services</li>
                                 <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
-                                <li><span class="fa fa-check mr-2"></span>Sales Management</li>
+                                <li><span class="fa-check mr-2"></span>Sales Management</li>
                             </ul>
-
                             <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
@@ -573,7 +576,6 @@
                         <div class="text-center">
                             <span class="excerpt d-block">Premium</span>
                             <span class="price"><sup>$</sup> <span class="number">149</span> <sub>/mos</sub></span>
-
                             <ul class="pricing-text mb-5">
                                 <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
                                 <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
@@ -581,7 +583,6 @@
                                 <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
                                 <li><span class="fa fa-check mr-2"></span>Sales Management</li>
                             </ul>
-
                             <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
