@@ -9,6 +9,9 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('sections.contact');
 })->name('contact');
+Route::get('/index', function () {
+    return view('sections.index');
+})->name('iinndex');
 
 Route::get('/blog', function () {
     return view('sections.blog');
