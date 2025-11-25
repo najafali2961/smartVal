@@ -48,13 +48,26 @@
          </button>
          <div class="collapse navbar-collapse" id="ftco-nav">
              <ul class="navbar-nav m-auto">
-                 <li class="nav-item"><a href="{{ route('contact') }}"  class="nav-link">Home</a></li>
-                 <li class="nav-item"><a href="{{ route('contact') }}"  class="nav-link">About</a></li>
-                 <li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
-                 <li class="nav-item"><a href="{{ route('contact') }}"  class="nav-link">Case Study</a></li>
-                 <li class="nav-item"><a href="{{ route('contact') }}"  class="nav-link">Blog</a></li>
-                 <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                 <li class="nav-item">
+                     <a href="{{ route('home') }}" class="nav-link">Home</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="{{ route('about') }}" class="nav-link">About</a>
+                 </li>
+                 <li class="nav-item active">
+                     <a href="{{ route('services') }}" class="nav-link">Services</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="{{ route('cases') }}" class="nav-link">Case Study</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="{{ route('blog') }}" class="nav-link">Blog</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="{{ route('contact') }}" class="nav-link">Contact</a>
+                 </li>
              </ul>
+
          </div>
      </div>
  </nav>
