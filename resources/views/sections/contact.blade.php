@@ -1,14 +1,17 @@
 @extends('layout.app')
+
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');"
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('assets/images/bg_2.jpg') }}');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-end">
                 <div class="col-md-9 ftco-animate pb-5">
-                    <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i
-                                    class="ion-ios-arrow-forward"></i></a></span> <span>Contact Us <i
-                                class="ion-ios-arrow-forward"></i></span></p>
+                    <p class="breadcrumbs mb-2">
+                        <span class="mr-2"><a href="{{ url('/') }}">Home <i
+                                    class="ion-ios-arrow-forward"></i></a></span>
+                        <span>Contact Us <i class="ion-ios-arrow-forward"></i></span>
+                    </p>
                     <h1 class="mb-0 bread">Contact Us</h1>
                 </div>
             </div>
@@ -29,6 +32,7 @@
                                         Your message was sent, thank you!
                                     </div>
                                     <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -76,8 +80,7 @@
                                             <span class="fa fa-map-marker"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016
-                                            </p>
+                                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -120,8 +123,8 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-7 d-flex align-items-center">
-                    <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Sign Up for Your Free 1st
-                        Accounting Consultation</h2>
+                    <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Sign Up for Your Free 1st Accounting
+                        Consultation</h2>
                 </div>
                 <div class="col-md-5 d-flex align-items-center">
                     <form action="#" class="subscribe-form">
