@@ -48,25 +48,26 @@
          </button>
          <div class="collapse navbar-collapse" id="ftco-nav">
              <ul class="navbar-nav m-auto">
-                 <li class="nav-item">
+                 <li class="nav-item {{ Route::is('home') ? 'active' : '' }}">
                      <a href="{{ route('home') }}" class="nav-link">Home</a>
                  </li>
-                 <li class="nav-item">
+                 <li class="nav-item {{ Route::is('about') ? 'active' : '' }}">
                      <a href="{{ route('about') }}" class="nav-link">About</a>
                  </li>
-                 <li class="nav-item active">
+                 <li class="nav-item {{ Route::is('services') ? 'active' : '' }}">
                      <a href="{{ route('services') }}" class="nav-link">Services</a>
                  </li>
-                 <li class="nav-item">
+                 <li class="nav-item {{ Route::is('cases') ? 'active' : '' }}">
                      <a href="{{ route('cases') }}" class="nav-link">Case Study</a>
                  </li>
-                 <li class="nav-item">
+                 <li class="nav-item {{ Route::is('blog') ? 'active' : '' }}">
                      <a href="{{ route('blog') }}" class="nav-link">Blog</a>
                  </li>
-                 <li class="nav-item">
+                 <li class="nav-item {{ Route::is('contact') ? 'active' : '' }}">
                      <a href="{{ route('contact') }}" class="nav-link">Contact</a>
                  </li>
              </ul>
+
 
          </div>
      </div>
