@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url('{{ asset('assets/images/image_4.jpg') }}');">
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');">
                         </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url('{{ asset('assets/images/image_5.jpg') }}');">
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');">
                         </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
