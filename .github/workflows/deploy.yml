@@ -1,0 +1,65 @@
+name: Laravel CI/CD Deployment
+
+on:
+  push:
+    branches:
+      - main  # adjust if your main branch is 'master'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v3
+        with:
+          php-version: 8.2
+          extensions: mbstring, bcmath, pdo, mysql
+          ini-values: post_max_size=256M, upload_max_filesize=256M
+          coverage: none
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev --prefer-dist --optimize-autoloader
+
+      - name: Copy .env
+        run: cp .env.production .env
+
+      - name: Run migrations
+        run: php artisan migrate --force
+
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          script: |
+            # Path to your repository
+            REPO_PATH=/home/repositories/smartVal
+            # Path to your domain public_html folder
+            PUBLIC_PATH=/home/smart-val.tritec.cloud/public_html
+
+            # Pull latest changes
+            cd $REPO_PATH
+            git pull origin main
+
+            # Install dependencies
+            composer install --no-dev --optimize-autoloader
+
+            # Copy .env
+            cp .env.production .env
+
+            # Run migrations
+            php artisan migrate --force
+
+            # Cache configs, routes, views
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+
+            # Sync the public folder to domain root
+            rsync -av --delete $REPO_PATH/public/ $PUBLIC_PATH/
