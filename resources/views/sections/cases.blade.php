@@ -1,14 +1,17 @@
 @extends('layout.app')
+
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');"
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('assets/images/bg_2.jpg') }}');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-end">
                 <div class="col-md-9 ftco-animate pb-5">
-                    <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i
-                                    class="ion-ios-arrow-forward"></i></a></span> <span>Case Study <i
-                                class="ion-ios-arrow-forward"></i></span></p>
+                    <p class="breadcrumbs mb-2">
+                        <span class="mr-2"><a href="{{ url('/') }}">Home <i
+                                    class="ion-ios-arrow-forward"></i></a></span>
+                        <span>Case Study <i class="ion-ios-arrow-forward"></i></span>
+                    </p>
                     <h1 class="mb-0 bread">Case Study</h1>
                 </div>
             </div>
@@ -20,61 +23,61 @@
             <div class="row">
                 <div class="col-lg-8 ftco-animate">
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url(images/image_1.jpg);"></div>
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');">
+                        </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
                             <h2>Business activities and care for the environment</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
-                                your mouth.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                             <p><a href="#" class="btn btn-primary">Read more</a></p>
                         </div>
                     </div>
 
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url(images/image_2.jpg);"></div>
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');">
+                        </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
                             <h2>Business activities and care for the environment</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
-                                your mouth.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                             <p><a href="#" class="btn btn-primary">Read more</a></p>
                         </div>
                     </div>
 
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url(images/image_3.jpg);"></div>
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_3.jpg') }}');">
+                        </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
                             <h2>Business activities and care for the environment</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
-                                your mouth.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                             <p><a href="#" class="btn btn-primary">Read more</a></p>
                         </div>
                     </div>
 
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url(images/image_4.jpg);"></div>
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_4.jpg') }}');">
+                        </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
                             <h2>Business activities and care for the environment</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
-                                your mouth.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                             <p><a href="#" class="btn btn-primary">Read more</a></p>
                         </div>
                     </div>
 
                     <div class="cases-wrap d-md-flex align-items-center">
-                        <div class="img" style="background-image: url(images/image_5.jpg);"></div>
+                        <div class="img" style="background-image: url('{{ asset('assets/images/image_5.jpg') }}');">
+                        </div>
                         <div class="text pl-md-5">
                             <span class="cat">Strategy</span>
                             <h2>Business activities and care for the environment</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
-                                your mouth.</p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                             <p><a href="#" class="btn btn-primary">Read more</a></p>
                         </div>
                     </div>
@@ -94,8 +97,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                </div> <!-- .col-md-8 -->
                 <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
                     <div class="sidebar-box">
                         <form action="#" class="search-form">
@@ -105,6 +108,7 @@
                             </div>
                         </form>
                     </div>
+
                     <div class="sidebar-box ftco-animate">
                         <div class="categories">
                             <h3>Categories</h3>
@@ -120,10 +124,11 @@
                     <div class="sidebar-box ftco-animate">
                         <h3>Recent Blog</h3>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                            <a class="blog-img mr-4"
+                                style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');"></a>
                             <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about the blind texts</a></h3>
+                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about
+                                        the blind texts</a></h3>
                                 <div class="meta">
                                     <div><a href="#"><span class="icon-calendar"></span> Jan. 30, 2020</a></div>
                                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -132,10 +137,11 @@
                             </div>
                         </div>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                            <a class="blog-img mr-4"
+                                style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');"></a>
                             <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about the blind texts</a></h3>
+                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about
+                                        the blind texts</a></h3>
                                 <div class="meta">
                                     <div><a href="#"><span class="icon-calendar"></span> Jan. 30, 2020</a></div>
                                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -144,10 +150,11 @@
                             </div>
                         </div>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                            <a class="blog-img mr-4"
+                                style="background-image: url('{{ asset('assets/images/image_3.jpg') }}');"></a>
                             <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about the blind texts</a></h3>
+                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about
+                                        the blind texts</a></h3>
                                 <div class="meta">
                                     <div><a href="#"><span class="icon-calendar"></span> Jan. 30, 2020</a></div>
                                     <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -173,22 +180,21 @@
 
                     <div class="sidebar-box ftco-animate">
                         <h3>Paragraph</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem
-                            necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente
-                            consectetur similique, inventore eos fugit cupiditate numquam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus
+                            voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur
+                            similique, inventore eos fugit cupiditate numquam!</p>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section> <!-- .section -->
+    </section>
 
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-7 d-flex align-items-center">
-                    <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Sign Up for Your Free 1st
-                        Accounting Consultation</h2>
+                    <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Sign Up for Your Free 1st Accounting
+                        Consultation</h2>
                 </div>
                 <div class="col-md-5 d-flex align-items-center">
                     <form action="#" class="subscribe-form">
