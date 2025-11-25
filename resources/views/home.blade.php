@@ -54,7 +54,7 @@
             <div class="row d-flex no-gutters">
                 <div class="col-md-6 d-flex">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
-                        style="background-image:url(images/about.jpg);">
+                        style="background-image:url{{ asset('assets/images/about.jpg') }};">
                     </div>
                 </div>
                 <div class="col-md-6 pl-md-5 py-md-5">
