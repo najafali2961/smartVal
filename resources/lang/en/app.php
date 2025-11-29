@@ -1,7 +1,17 @@
 <?php
 
 return [
+    'phone' => '+00 1234 567',
+    'email' => 'youremail@email.com',
+    'search_placeholder' => 'Search',
+    'menu' => 'Menu',
     'home' => 'Home',
+    'about' => 'About',
+    'services' => 'Services',
+    'case_study' => 'Case Study',
+    'blog' => 'Blog',
+    'contact' => 'Contact',
+    'brand' => 'Accounting',
     'contact_us' => 'Contact Us',
     'get_in_touch' => 'Get in touch',
     'message_sent' => 'Your message was sent, thank you!',
@@ -13,8 +23,6 @@ return [
     'lets_get_in_touch' => "Let's get in touch",
     'contact_intro' => "We're open for any suggestion or just to have a chat",
     'address' => 'Address:',
-    'phone' => 'Phone:',
-    'email' => 'Email:',
     'website' => 'Website',
     'signup_consultation' => 'Sign Up for Your Free 1st Accounting Consultation',
     'enter_email' => 'Enter email address',

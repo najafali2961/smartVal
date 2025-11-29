@@ -1,7 +1,17 @@
 <?php
 
 return [
+    'phone' => '+00 1234 567', // Keep same format if number doesn’t change
+    'email' => 'youremail@email.com',
+    'search_placeholder' => 'Sök',
+    'menu' => 'Meny',
     'home' => 'Hem',
+    'about' => 'Om oss',
+    'services' => 'Tjänster',
+    'case_study' => 'Fallstudie',
+    'blog' => 'Blogg',
+    'contact' => 'Kontakt',
+    'brand' => 'Redovisning',
     'contact_us' => 'Kontakta oss',
     'get_in_touch' => 'Ta kontakt',
     'message_sent' => 'Ditt meddelande har skickats, tack!',
@@ -13,8 +23,6 @@ return [
     'lets_get_in_touch' => 'Låt oss ta kontakt',
     'contact_intro' => 'Vi är öppna för förslag eller bara för att prata',
     'address' => 'Adress:',
-    'phone' => 'Telefon:',
-    'email' => 'E-post:',
     'website' => 'Webbplats',
     'signup_consultation' => 'Anmäl dig för din kostnadsfria första bokföringskonsultation',
     'enter_email' => 'Ange e-postadress',
