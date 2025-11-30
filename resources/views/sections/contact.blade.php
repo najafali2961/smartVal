@@ -29,43 +29,72 @@
                                     <h3 class="mb-4">{{ __('app.get_in_touch') }}</h3>
                                     <div id="form-message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">{{ __('app.message_sent') }}</div>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <form method="POST" action="{{ url('/contact') }}" class="contactForm">
                                         @csrf
+
+                                        <!-- Success Message -->
+                                        @if (session('success'))
+                                            <div class="alert alert-success mb-4">
+                                                {{ session('success') }}
+                                            </div>
+                                        @endif
+
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="label" for="name">{{ __('app.full_name') }}</label>
-                                                    <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="{{ __('app.full_name') }}">
+                                                    <input type="text" name="name"
+                                                        class="form-control @error('name') is-invalid @enderror"
+                                                        value="{{ old('name') }}"
+                                                        placeholder="{{ __('app.full_name') }}" required>
+                                                    @error('name')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="label"
                                                         for="email">{{ __('app.email_address') }}</label>
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="{{ __('app.email_address') }}">
+                                                    <input type="email" name="email"
+                                                        class="form-control @error('email') is-invalid @enderror"
+                                                        value="{{ old('email') }}"
+                                                        placeholder="{{ __('app.email_address') }}" required>
+                                                    @error('email')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
                                                 </div>
                                             </div>
+
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="label" for="subject">{{ __('app.subject') }}</label>
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                        placeholder="{{ __('app.subject') }}">
+                                                    <input type="text" name="subject"
+                                                        class="form-control @error('subject') is-invalid @enderror"
+                                                        value="{{ old('subject') }}" placeholder="{{ __('app.subject') }}"
+                                                        required>
+                                                    @error('subject')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
                                                 </div>
                                             </div>
+
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="label" for="message">{{ __('app.message') }}</label>
-                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                                                        placeholder="{{ __('app.message') }}"></textarea>
+                                                    <textarea name="message" class="form-control @error('message') is-invalid @enderror" rows="5"
+                                                        placeholder="{{ __('app.message') }}" required>{{ old('message') }}</textarea>
+                                                    @error('message')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
                                                 </div>
                                             </div>
+
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="submit" value="{{ __('app.send_message') }}"
-                                                        class="btn btn-primary">
-                                                    <div class="submitting"></div>
+                                                    <button type="submit" class="btn btn-primary">
+                                                        {{ __('app.send_message') }}
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,8 +120,7 @@
                                             <span class="fa fa-phone"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>{{ __('app.phone') }}</span> <a href="tel://1234567920">+ 1235 2355
-                                                    98</a></p>
+                                            <p><span>{{ __('app.phone') }}</span> <a href="tel://1234567920"></a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
