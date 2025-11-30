@@ -2,7 +2,7 @@
 
 return [
     'phone' => '+00 1234 567',
-    'email' => 'youremail@email.com',
+    'email' => 'contact@smartval.tritec.cloud',
     'search_placeholder' => 'Search',
     'menu' => 'Menu',
     'home' => 'Home',

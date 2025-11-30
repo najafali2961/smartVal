@@ -2,7 +2,7 @@
 
 return [
     'phone' => '+00 1234 567', // Keep same format if number doesn’t change
-    'email' => 'youremail@email.com',
+    'email' => 'contact@smartval.tritec.cloud',
     'search_placeholder' => 'Sök',
     'menu' => 'Meny',
     'home' => 'Hem',
