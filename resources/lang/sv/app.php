@@ -1,8 +1,9 @@
 <?php
 
 return [
-    'phone' => '+00 1234 567', // Keep same format if number doesn’t change
+    'phone' => '+00 1234 567',
     'email' => 'contact@smartval.tritec.cloud',
+
     'search_placeholder' => 'Sök',
     'menu' => 'Meny',
     'home' => 'Hem',
@@ -12,6 +13,21 @@ return [
     'blog' => 'Blogg',
     'contact' => 'Kontakt',
     'brand' => 'Redovisning',
+
+    // Service Section
+    'service_accounting_title' => 'Redovisning',
+    'service_accounting_text' => 'Även den mäktige Pointing har ingen kontroll över blinda texter.',
+
+    'service_tax_title' => 'Skatt, regelefterlevnad & löner',
+    'service_tax_text' => 'Även den mäktige Pointing har ingen kontroll över blinda texter.',
+
+    'service_finance_title' => 'Finansiella tjänster',
+    'service_finance_text' => 'Även den mäktige Pointing har ingen kontroll över blinda texter.',
+
+    'service_growth_title' => 'Tillväxt & finansiering',
+    'service_growth_text' => 'Även den mäktige Pointing har ingen kontroll över blinda texter.',
+
+    // Contact
     'contact_us' => 'Kontakta oss',
     'get_in_touch' => 'Ta kontakt',
     'message_sent' => 'Ditt meddelande har skickats, tack!',

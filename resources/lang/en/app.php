@@ -1,8 +1,8 @@
 <?php
-
 return [
     'phone' => '+00 1234 567',
     'email' => 'contact@smartval.tritec.cloud',
+
     'search_placeholder' => 'Search',
     'menu' => 'Menu',
     'home' => 'Home',
@@ -12,6 +12,21 @@ return [
     'blog' => 'Blog',
     'contact' => 'Contact',
     'brand' => 'Accounting',
+
+    // Service Section
+    'service_accounting_title' => 'Accounting',
+    'service_accounting_text' => 'Even the all-powerful Pointing has no control about the blind texts.',
+
+    'service_tax_title' => 'Tax, Compliance & Payroll',
+    'service_tax_text' => 'Even the all-powerful Pointing has no control about the blind texts.',
+
+    'service_finance_title' => 'Financial Services',
+    'service_finance_text' => 'Even the all-powerful Pointing has no control about the blind texts.',
+
+    'service_growth_title' => 'Growth & Funding Access',
+    'service_growth_text' => 'Even the all-powerful Pointing has no control about the blind texts.',
+
+    // Contact Form
     'contact_us' => 'Contact Us',
     'get_in_touch' => 'Get in touch',
     'message_sent' => 'Your message was sent, thank you!',
