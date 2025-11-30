@@ -42,4 +42,28 @@ return [
     'signup_consultation' => 'Sign Up for Your Free 1st Accounting Consultation',
     'enter_email' => 'Enter email address',
     'subscribe' => 'Subscribe',
+
+
+    //////faq
+    'faqs' => 'FAQs',
+    'frequently_asked_questions' => 'Frequently Asked Questions',
+    'faq_intro' => 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
+
+    'faq_q1' => 'How to fix a problem?',
+    'faq_q1_list' => [
+        'Far far away, behind the word mountains',
+        'Consonantia, there live the blind texts',
+        'When she reached the first hills of the Italic Mountains',
+        'Bookmarksgrove, the headline of Alphabet Village',
+        'Separated they live in Bookmarksgrove right',
+    ],
+
+    'faq_q2' => 'How to manage your business loans?',
+    'faq_q3' => 'How to grow your investments funds?',
+    'faq_q4' => 'What are those requirements for businesses?',
+
+    'faq_q4_answer' =>
+    'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+        the Semantics, a large language ocean.',
 ];

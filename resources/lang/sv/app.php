@@ -43,4 +43,27 @@ return [
     'signup_consultation' => 'Anmäl dig för din kostnadsfria första bokföringskonsultation',
     'enter_email' => 'Ange e-postadress',
     'subscribe' => 'Prenumerera',
+
+    ////////faaq
+    'faqs' => 'Vanliga frågor',
+    'frequently_asked_questions' => 'Vanliga frågor och svar',
+    'faq_intro' => 'Långt borta, bakom ordbergen, långt från länderna Vokalia och Consonantia, bor de blinda texterna.',
+
+    'faq_q1' => 'Hur löser man ett problem?',
+    'faq_q1_list' => [
+        'Långt borta, bakom ordbergen',
+        'Consonantia, där bor de blinda texterna',
+        'När hon nådde de första kullarna av de italienska bergen',
+        'Bookmarksgrove, rubriken i Alphabet Village',
+        'Åtskilda bor de i Bookmarksgrove',
+    ],
+
+    'faq_q2' => 'Hur hanterar man sina företagslån?',
+    'faq_q3' => 'Hur växer man sina investeringsfonder?',
+    'faq_q4' => 'Vilka är kraven för företag?',
+
+    'faq_q4_answer' =>
+    'Långt borta, bakom ordbergen, långt från länderna Vokalia och Consonantia bor de blinda texterna.
+        Åtskilda bor de i Bookmarksgrove vid kusten av Semantics, ett stort språk- hav.',
+
 ];
