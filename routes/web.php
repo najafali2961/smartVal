@@ -42,7 +42,7 @@ Route::group(
         Message:
         {$request->message}
     ", function ($message) use ($request) {
-                $message->to('naju2961@gmail.com') // ← your email
+                $message->to('contact@smartval.tritec.cloud') // ← your email
                     ->replyTo($request->email, $request->name)
                     ->subject($request->subject ?? 'New Contact Form Message');
             });
