@@ -77,5 +77,15 @@ return [
     'about_text_1' => 'Vi erbjuder tydliga och pålitliga redovisningstjänster för företag i alla storlekar.',
     'about_text_2' => 'Vårt team hanterar bokföring, skattedeklarationer och ekonomisk planering med noggrannhet och omsorg.',
 
+    ////herooo
+    'hero_1_subtitle' => 'Vi hjälper företag att växa',
+    'hero_1_title' => 'Innovativa lösningar för ditt företag',
 
+    'hero_2_subtitle' => 'Vi stöttar din framgång',
+    'hero_2_title' => 'Pålitliga affärsstödstjänster',
+
+    'hero_3_subtitle' => 'Vi ger vägledning',
+    'hero_3_title' => 'Expert rådgivning inom ekonomi och verksamhet',
+
+    'hero_button' => 'Kontakta oss',
 ];

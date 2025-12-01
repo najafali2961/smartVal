@@ -79,5 +79,16 @@ return [
     'about_text_1' => 'We offer clear and reliable accounting services designed to support businesses of all sizes.',
     'about_text_2' => 'Our team handles bookkeeping, tax filings, and financial planning with accuracy and care.',
 
+    ////////hroo
+    'hero_1_subtitle' => 'We Help Businesses Grow',
+    'hero_1_title' => 'Innovative Solutions for Your Business',
+
+    'hero_2_subtitle' => 'We Support Your Success',
+    'hero_2_title' => 'Reliable Business Support Services',
+
+    'hero_3_subtitle' => 'We Offer Guidance',
+    'hero_3_title' => 'Expert Financial and Business Advice',
+
+    'hero_button' => 'Connect with us',
 
 ];
