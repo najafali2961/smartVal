@@ -91,4 +91,37 @@ return [
 
     'hero_button' => 'Connect with us',
 
+
+    // Footer About
+    'footer_about_title' => 'About Us',
+    'footer_about_text' => 'We provide reliable accounting and business services tailored to your needs.',
+
+    // Socials
+    'footer_twitter' => 'Twitter',
+    'footer_facebook' => 'Facebook',
+    'footer_instagram' => 'Instagram',
+
+    // Columns
+    'footer_services' => 'Services',
+    'footer_discover' => 'Discover',
+    'footer_resources' => 'Resources',
+
+    // Links (Services Column)
+    'footer_services_link' => 'Our Services',
+    'footer_case_studies' => 'Case Studies',
+    'footer_about' => 'About Us',
+    'footer_contact' => 'Contact Us',
+
+    // Links (Discover Column)
+    'footer_home' => 'Home',
+    'footer_blog' => 'Blog',
+    'footer_terms' => 'Terms & Conditions',
+    'footer_policies' => 'Policies',
+
+    // Links (Resources Column)
+    'footer_security' => 'Security',
+    'footer_global' => 'Global',
+    'footer_charts' => 'Charts',
+    'footer_privacy' => 'Privacy Policy',
+
 ];

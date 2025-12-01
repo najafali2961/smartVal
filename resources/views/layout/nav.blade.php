@@ -13,18 +13,7 @@
                         </div>
 
                         <div class="col-md-6 d-flex justify-content-md-end align-items-center">
-                            <div class="social-media mr-3">
-                                <p class="mb-0 d-flex">
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-facebook"></span></a>
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-twitter"></span></a>
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-instagram"></span></a>
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-dribbble"></span></a>
-                                </p>
-                            </div>
+
 
                             <div class="language-switcher">
                                 @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)

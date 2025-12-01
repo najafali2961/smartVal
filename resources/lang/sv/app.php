@@ -88,4 +88,36 @@ return [
     'hero_3_title' => 'Expert rådgivning inom ekonomi och verksamhet',
 
     'hero_button' => 'Kontakta oss',
+
+    // Footer About
+    'footer_about_title' => 'Om oss',
+    'footer_about_text' => 'Vi erbjuder pålitliga redovisnings- och affärstjänster anpassade efter dina behov.',
+
+    // Socials
+    'footer_twitter' => 'Twitter',
+    'footer_facebook' => 'Facebook',
+    'footer_instagram' => 'Instagram',
+
+    // Columns
+    'footer_services' => 'Tjänster',
+    'footer_discover' => 'Upptäck',
+    'footer_resources' => 'Resurser',
+
+    // Links (Services Column)
+    'footer_services_link' => 'Våra tjänster',
+    'footer_case_studies' => 'Fallstudier',
+    'footer_about' => 'Om oss',
+    'footer_contact' => 'Kontakta oss',
+
+    // Links (Discover Column)
+    'footer_home' => 'Hem',
+    'footer_blog' => 'Blogg',
+    'footer_terms' => 'Villkor',
+    'footer_policies' => 'Policyer',
+
+    // Links (Resources Column)
+    'footer_security' => 'Säkerhet',
+    'footer_global' => 'Globalt',
+    'footer_charts' => 'Diagram',
+    'footer_privacy' => 'Integritetspolicy',
 ];
