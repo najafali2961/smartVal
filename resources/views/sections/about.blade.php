@@ -20,8 +20,6 @@
 
     @include('sections.info')
     @include('sections.cta')
-
     @include('sections.testimonies')
-
     @include('sections.faq')
 @endsection
