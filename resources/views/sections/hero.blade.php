@@ -9,7 +9,8 @@
                         <div class="text w-100 text-center">
                             <h2>{{ __('app.hero_1_subtitle') }}</h2>
                             <h1 class="mb-4">{{ __('app.hero_1_title') }}</h1>
-                            <p><a href="#" class="btn btn-white">{{ __('app.hero_button') }}</a></p>
+                            <p><a href="{{ route('contact') }}" class="btn btn-white">{{ __('app.hero_button') }}</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -24,7 +25,8 @@
                         <div class="text w-100 text-center">
                             <h2>{{ __('app.hero_2_subtitle') }}</h2>
                             <h1 class="mb-4">{{ __('app.hero_2_title') }}</h1>
-                            <p><a href="#" class="btn btn-white">{{ __('app.hero_button') }}</a></p>
+                            <p><a href="{{ route('contact') }}" class="btn btn-white">{{ __('app.hero_button') }}</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -39,7 +41,8 @@
                         <div class="text w-100 text-center">
                             <h2>{{ __('app.hero_3_subtitle') }}</h2>
                             <h1 class="mb-4">{{ __('app.hero_3_title') }}</h1>
-                            <p><a href="#" class="btn btn-white">{{ __('app.hero_button') }}</a></p>
+                            <p><a href="{{ route('contact') }}" class="btn btn-white">{{ __('app.hero_button') }}</a>
+                            </p>
                         </div>
                     </div>
                 </div>
