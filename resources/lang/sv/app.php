@@ -66,4 +66,11 @@ return [
     'Långt borta, bakom ordbergen, långt från länderna Vokalia och Consonantia bor de blinda texterna.
         Åtskilda bor de i Bookmarksgrove vid kusten av Semantics, ett stort språk- hav.',
 
+
+
+
+    ///////////about ppage
+    'about_us_title' => 'Om oss',
+
+
 ];
