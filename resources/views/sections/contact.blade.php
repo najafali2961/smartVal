@@ -129,7 +129,7 @@
                                         </div>
                                         <div class="text pl-3">
                                             <p><span>{{ __('app.email') }}</span> <a
-                                                    href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                                    href="mailto:{{ __('app.email') }}"></a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -137,7 +137,7 @@
                                             <span class="fa fa-globe"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>{{ __('app.website') }}</span> <a href="#">yoursite.com</a></p>
+                                            <p><span>{{ __('app.website') }}</span> <a href="#"></a></p>
                                         </div>
                                     </div>
                                 </div>

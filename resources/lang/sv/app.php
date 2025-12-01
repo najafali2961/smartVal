@@ -71,6 +71,11 @@ return [
 
     ///////////about ppage
     'about_us_title' => 'Om oss',
+    'about_subtitle' => 'Välkommen till Accounting',
+    'about_title' => 'Din pålitliga redovisningspartner',
+
+    'about_text_1' => 'Vi erbjuder tydliga och pålitliga redovisningstjänster för företag i alla storlekar.',
+    'about_text_2' => 'Vårt team hanterar bokföring, skattedeklarationer och ekonomisk planering med noggrannhet och omsorg.',
 
 
 ];

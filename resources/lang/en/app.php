@@ -73,4 +73,11 @@ return [
     ///////////about ppage
     'about_us_title' => 'About Us',
 
+    'about_subtitle' => 'Welcome to Accounting',
+    'about_title' => 'Your Trusted Accounting Partner',
+
+    'about_text_1' => 'We offer clear and reliable accounting services designed to support businesses of all sizes.',
+    'about_text_2' => 'Our team handles bookkeeping, tax filings, and financial planning with accuracy and care.',
+
+
 ];
