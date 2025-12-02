@@ -13,7 +13,7 @@
                             <li class="ftco-animate">
                                 <a href="#" data-toggle="tooltip" data-placement="top"
                                     title="{{ __('app.footer_twitter') }}">
-                                    <span class="fa fa-twitter"></span>
+                                    <span class="fa fa-whatsapp"></span>
                                 </a>
                             </li>
                             <li class="ftco-animate">
@@ -44,8 +44,7 @@
                                             <li><a href="{{ route('services') }}"
                                                     class="py-1 d-block">{{ __('app.footer_services_link') }}</a></li>
 
-                                            <li><a href="{{ route('about') }}"
-                                                    class="py-1 d-block">{{ __('app.footer_about') }}</a></li>
+
 
                                         </ul>
                                     </div>
@@ -56,8 +55,10 @@
                                         <ul class="list-unstyled">
                                             <li><a href="{{ route('home') }}"
                                                     class="py-1 d-block">{{ __('app.footer_home') }}</a></li>
-                                            <li><a href="{{ route('blog') }}"
-                                                    class="py-1 d-block">{{ __('app.footer_blog') }}</a></li>
+                                            <li><a href="{{ route('about') }}"
+                                                    class="py-1 d-block">{{ __('app.footer_about') }}</a></li>
+                                            {{-- <li><a href="{{ route('blog') }}"
+                                                    class="py-1 d-block">{{ __('app.footer_blog') }}</a></li> --}}
 
 
                                         </ul>
@@ -67,8 +68,8 @@
                                     <div class="col-md-4 mb-md-0 mb-4">
                                         <h2 class="footer-heading">{{ __('app.footer_resources') }}</h2>
                                         <ul class="list-unstyled">
-                                            <li><a href="{{ route('cases') }}"
-                                                    class="py-1 d-block">{{ __('app.footer_case_studies') }}</a></li>
+                                            {{-- <li><a href="{{ route('cases') }}"
+                                                    class="py-1 d-block">{{ __('app.footer_case_studies') }}</a></li> --}}
                                             <li><a href="{{ route('contact') }}"
                                                     class="py-1 d-block">{{ __('app.footer_contact') }}</a></li>
                                         </ul>

@@ -111,7 +111,7 @@
                                             <span class="fa fa-map-marker"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>{{ __('app.address') }}</span> 198 West 21th Street, Suite 721 New
+                                            <p><span></span> 198 West 21th Street, Suite 721 New
                                                 York NY 10016</p>
                                         </div>
                                     </div>
@@ -120,7 +120,15 @@
                                             <span class="fa fa-phone"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>{{ __('app.phone') }}</span> <a href="tel://1234567920"></a></p>
+                                            <p><span></span> <a href="tel://1234567920">211241</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-whatsapp"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                            <p><span></span> <a href="#"></a></p>
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-center">
@@ -132,14 +140,7 @@
                                                     href="mailto:{{ __('app.email') }}"></a></p>
                                         </div>
                                     </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-globe"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>{{ __('app.website') }}</span> <a href="#"></a></p>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
 

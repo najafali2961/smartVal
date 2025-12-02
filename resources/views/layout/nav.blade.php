@@ -67,13 +67,13 @@
                     <a href="{{ route('services') }}" class="nav-link">{{ __('app.services') }}</a>
                 </li>
 
-                <li class="nav-item {{ Route::is('cases') ? 'active' : '' }}">
+                {{-- <li class="nav-item {{ Route::is('cases') ? 'active' : '' }}">
                     <a href="{{ route('cases') }}" class="nav-link">{{ __('app.case_study') }}</a>
                 </li>
 
                 <li class="nav-item {{ Route::is('blog') ? 'active' : '' }}">
                     <a href="{{ route('blog') }}" class="nav-link">{{ __('app.blog') }}</a>
-                </li>
+                </li> --}}
 
                 <li class="nav-item {{ Route::is('contact') ? 'active' : '' }}">
                     <a href="{{ route('contact') }}" class="nav-link">{{ __('app.contact') }}</a>

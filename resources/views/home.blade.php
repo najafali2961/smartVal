@@ -6,6 +6,5 @@
     @include('sections.acounting')
     @include('sections.cta')
     @include('sections.faq')
-    @include('sections.news')
     @include('sections.pricing')
 @endsection
