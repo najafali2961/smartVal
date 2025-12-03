@@ -10,26 +10,35 @@
                         <p>{{ __('app.footer_about_text') }}</p>
 
                         <ul class="ftco-footer-social p-0">
+
+                            {{-- WhatsApp --}}
                             <li class="ftco-animate">
-                                <a href="#" data-toggle="tooltip" data-placement="top"
-                                    title="{{ __('app.footer_twitter') }}">
+                                <a href="https://wa.me/46731414786" target="_blank" data-toggle="tooltip"
+                                    data-placement="top" title="WhatsApp">
                                     <span class="fa fa-whatsapp"></span>
                                 </a>
                             </li>
+
+
+                            {{-- Facebook --}}
                             <li class="ftco-animate">
-                                <a href="#" data-toggle="tooltip" data-placement="top"
-                                    title="{{ __('app.footer_facebook') }}">
+                                <a href="https://www.facebook.com/share/17jhjEELoW/?mibextid=wwXIfr" target="_blank"
+                                    data-toggle="tooltip" data-placement="top" title="Facebook">
                                     <span class="fa fa-facebook"></span>
                                 </a>
                             </li>
+
+                            {{-- Instagram --}}
                             <li class="ftco-animate">
-                                <a href="#" data-toggle="tooltip" data-placement="top"
-                                    title="{{ __('app.footer_instagram') }}">
+                                <a href="https://www.instagram.com/smartvalredovisning?igsh=a2d5cnkwZXp1dGVx&utm_source=qr"
+                                    target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram">
                                     <span class="fa fa-instagram"></span>
                                 </a>
                             </li>
+
                         </ul>
                     </div>
+
 
                     <!-- Links -->
                     <div class="col-md-8">

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'phone' => '+00 1234 567',
-    'email' => 'contact@smartval.tritec.cloud',
+    'phone' => '+46 73 141 47 86',
+    'email' => 'info@smart-val.se',
 
     'search_placeholder' => 'Sök',
     'menu' => 'Meny',
