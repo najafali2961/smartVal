@@ -106,42 +106,65 @@
                                 <div class="info-wrap bg-primary w-100 p-md-5 p-4">
                                     <h3>{{ __('app.lets_get_in_touch') }}</h3>
                                     <p class="mb-4">{{ __('app.contact_intro') }}</p>
+
+                                    {{-- ADDRESS --}}
                                     <div class="dbox w-100 d-flex align-items-start">
                                         <div class="icon d-flex align-items-center justify-content-center">
                                             <span class="fa fa-map-marker"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span></span> 198 West 21th Street, Suite 721 New
-                                                York NY 10016</p>
+                                            <p>
+                                                <span></span>
+                                                <a href="https://www.google.com/maps/search/?api=1&query=Nylyckegatan+7D+53141+Lidköping"
+                                                    target="_blank">
+                                                    Nylyckegatan 7D, 53141, Lidköping
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
+
+                                    {{-- PHONE --}}
                                     <div class="dbox w-100 d-flex align-items-center">
                                         <div class="icon d-flex align-items-center justify-content-center">
                                             <span class="fa fa-phone"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span></span> <a href="tel://1234567920">211241</a></p>
+                                            <p>
+                                                <span></span>
+                                                <a href="tel:+46731414786">+46 73 141 47 86</a>
+                                            </p>
                                         </div>
                                     </div>
+
+                                    {{-- WHATSAPP --}}
                                     <div class="dbox w-100 d-flex align-items-center">
                                         <div class="icon d-flex align-items-center justify-content-center">
                                             <span class="fa fa-whatsapp"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span></span> <a href="#"></a></p>
+                                            <p>
+                                                <span></span>
+                                                <a href="https://wa.me/46731414786" target="_blank">
+                                                    +46 73 141 47 86
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
+
+                                    {{-- EMAIL --}}
                                     <div class="dbox w-100 d-flex align-items-center">
                                         <div class="icon d-flex align-items-center justify-content-center">
                                             <span class="fa fa-paper-plane"></span>
                                         </div>
                                         <div class="text pl-3">
-                                            <p><span>{{ __('app.email') }}</span> <a
-                                                    href="mailto:{{ __('app.email') }}"></a></p>
+                                            <p>
+                                                <span></span>
+                                                <a href="mailto:info@smart-val.se">info@smart-val.se</a>
+                                            </p>
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
 
                         </div>
