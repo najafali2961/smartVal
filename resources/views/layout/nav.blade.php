@@ -41,7 +41,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="{{ LaravelLocalization::localizeURL(route('home')) }}">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="{{ __('app.brand') }}" style="height: 50px;">
+            <img src="{{ asset('assets/images/logo1.png') }}" alt="{{ __('app.brand') }}" style="height: 50px;">
         </a>
         <form action="#" class="searchform order-sm-start order-lg-last">
             <div class="form-group d-flex">
