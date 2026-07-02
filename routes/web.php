@@ -19,12 +19,14 @@ Route::group(
 
         Route::get('/', fn() => view('home'))->name('home');
         Route::get('/contact', fn() => view('sections.contact'))->name('contact');
-        Route::get('/index', fn() => view('sections.index'))->name('iinndex');
-        Route::get('/blog', fn() => view('sections.blog'))->name('blog');
         Route::get('/about', fn() => view('sections.about'))->name('about');
         Route::get('/service', fn() => view('sections.services'))->name('services');
-        Route::get('/case-study', fn() => view('sections.cases'))->name('cases');
         Route::post('/contact', function (Request $request) {
+
+            // Honeypot: bots fill the hidden "website" field — pretend success, send nothing
+            if ($request->filled('website')) {
+                return back()->with('success', __('app.message_sent'));
+            }
 
             $request->validate([
                 'name'    => 'required',
@@ -42,13 +44,13 @@ Route::group(
         Message:
         {$request->message}
     ", function ($message) use ($request) {
-                $message->to('cinfo@smart-val.se') // ← your email
+                $message->to('info@smart-val.se')
                     ->replyTo($request->email, $request->name)
                     ->subject($request->subject ?? 'New Contact Form Message');
             });
 
             return back()->with('success', __('app.message_sent'));
-        });
+        })->name('contact.send');
     }
 
 

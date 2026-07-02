@@ -1,26 +1,31 @@
 @extends('layout.app')
 
+@section('title', __('app.meta_services_title'))
+@section('meta_description', __('app.meta_services_desc'))
+
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('assets/images/bg_2.jpg') }}');"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text align-items-end">
-                <div class="col-md-9 ftco-animate pb-5">
-                    <p class="breadcrumbs mb-2">
-                        <span class="mr-2">
-                            <a href="{{ url('/') }}">{{ __('app.home') }} <i class="ion-ios-arrow-forward"></i></a>
-                        </span>
-                        <span>{{ __('app.services') }} <i class="ion-ios-arrow-forward"></i></span>
-                    </p>
-                    <h1 class="mb-0 bread">{{ __('app.services') }}</h1>
-                </div>
+
+    @include('sections.page-hero', [
+        'title' => __('app.services_hero_title'),
+        'subtitle' => __('app.services_hero_text'),
+    ])
+
+    {{-- Intro --}}
+    <section class="pt-16 sm:pt-20">
+        <div class="container-x">
+            <div class="reveal mx-auto max-w-3xl text-center">
+                <p class="text-lg leading-relaxed text-ink-600">{{ __('app.services_page_intro') }}</p>
             </div>
         </div>
     </section>
 
+    {{-- All 12 services, detailed cards with bullets + anchor ids --}}
+    @include('sections.services-grid', ['detailed' => true])
 
-    @include('sections.acounting')
+    @include('sections.process')
+
     @include('sections.faq')
-    @include('sections.pricing')
+
+    @include('sections.cta')
+
 @endsection

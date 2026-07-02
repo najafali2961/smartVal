@@ -1,128 +1,46 @@
-<section class="ftco-section ftco-no-pt bg-light ftco-faqs">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="img-faqs w-100">
-                    <div class="img mb-4 mb-sm-0"
-                        style="background-image: url('{{ asset('assets/images/about-2.jpg') }}');"></div>
-                    <div class="img img-2 mb-4 mb-sm-0"
-                        style="background-image: url('{{ asset('assets/images/about-1.jpg') }}');"></div>
-                </div>
+<section class="bg-ink-50/60 py-16 sm:py-24">
+    <div class="container-x grid gap-12 lg:grid-cols-5 lg:gap-16">
+
+        <div class="reveal lg:col-span-2">
+            <span class="kicker">{{ __('app.faq_kicker') }}</span>
+            <h2 class="section-title">{{ __('app.faq_title') }}</h2>
+            <p class="mt-4 text-lg leading-relaxed text-ink-600">{{ __('app.faq_text') }}</p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+                <a href="tel:{{ __('app.phone_href') }}" class="btn-primary btn-md">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    {{ __('app.phone') }}
+                </a>
+                <a href="mailto:{{ __('app.email') }}" class="btn-outline btn-md bg-white">{{ __('app.email') }}</a>
             </div>
+        </div>
 
-            <div class="col-lg-6 pl-lg-5">
-                <div class="heading-section mb-5 mt-5 mt-lg-0">
-                    <span class="subheading">@lang('app.faqs')</span>
-                    <h2 class="mb-3">@lang('app.frequently_asked_questions')</h2>
-                    <p>@lang('app.faq_intro')</p>
-                </div>
-
-                <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
-
-                    {{-- FAQ 1 --}}
-                    <div class="card">
-                        <div class="card-header p-0" id="headingOne">
-                            <h2 class="mb-0">
-                                <button href="#collapseOne"
-                                    class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                                    data-parent="#accordion" data-toggle="collapse" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    <p class="mb-0">@lang('app.faq_q1')</p>
-                                    <i class="fa" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="card-body py-3 px-0">
-                                <ol>
-                                    <li>@lang('app.faq_q1_list.0')</li>
-                                    <li>@lang('app.faq_q1_list.1')</li>
-                                    <li>@lang('app.faq_q1_list.2')</li>
-                                    <li>@lang('app.faq_q1_list.3')</li>
-                                    <li>@lang('app.faq_q1_list.4')</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- FAQ 2 --}}
-                    <div class="card">
-                        <div class="card-header p-0" id="headingTwo" role="tab">
-                            <h2 class="mb-0">
-                                <button href="#collapseTwo"
-                                    class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                                    data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    <p class="mb-0">@lang('app.faq_q2')</p>
-                                    <i class="fa" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="card-body py-3 px-0">
-                                <ol>
-                                    <li>@lang('app.faq_q1_list.0')</li>
-                                    <li>@lang('app.faq_q1_list.1')</li>
-                                    <li>@lang('app.faq_q1_list.2')</li>
-                                    <li>@lang('app.faq_q1_list.3')</li>
-                                    <li>@lang('app.faq_q1_list.4')</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- FAQ 3 --}}
-                    <div class="card">
-                        <div class="card-header p-0" id="headingThree" role="tab">
-                            <h2 class="mb-0">
-                                <button href="#collapseThree"
-                                    class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                                    data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    <p class="mb-0">@lang('app.faq_q3')</p>
-                                    <i class="fa" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="card-body py-3 px-0">
-                                <ol>
-                                    <li>@lang('app.faq_q1_list.0')</li>
-                                    <li>@lang('app.faq_q1_list.1')</li>
-                                    <li>@lang('app.faq_q1_list.2')</li>
-                                    <li>@lang('app.faq_q1_list.3')</li>
-                                    <li>@lang('app.faq_q1_list.4')</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- FAQ 4 --}}
-                    <div class="card">
-                        <div class="card-header p-0" id="headingFour" role="tab">
-                            <h2 class="mb-0">
-                                <button href="#collapseFour"
-                                    class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                                    data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    <p class="mb-0">@lang('app.faq_q4')</p>
-                                    <i class="fa" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
-                            <div class="card-body py-3 px-0">
-                                <p>@lang('app.faq_q4_answer')</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+        <div class="reveal lg:col-span-3" data-faq-group>
+            <div class="space-y-3.5">
+                @foreach ([1, 2, 3, 4, 5, 6] as $i)
+                    <details class="faq-item group rounded-2xl border border-ink-100 bg-white shadow-card"
+                        @if ($i === 1) open @endif>
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 text-left font-extrabold text-ink-950 sm:p-6 sm:text-lg">
+                            {{ __('app.faq_q' . $i) }}
+                            <span
+                                class="faq-chevron flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-600 transition-transform duration-300">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="px-5 pb-5 -mt-1 text-[15px] leading-relaxed text-ink-600 sm:px-6 sm:pb-6">
+                            {{ __('app.faq_a' . $i) }}
+                        </p>
+                    </details>
+                @endforeach
             </div>
         </div>
     </div>

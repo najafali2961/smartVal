@@ -6,6 +6,150 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+    /* Brand green — sampled from the Smart Val logo */
+    --color-brand-50: #f1faf3;
+    --color-brand-100: #ddf3e3;
+    --color-brand-200: #bde7ca;
+    --color-brand-300: #8dd4a6;
+    --color-brand-400: #57b97a;
+    --color-brand-500: #34a157;
+    --color-brand-600: #238445;
+    --color-brand-700: #1d6a39;
+    --color-brand-800: #1a5430;
+    --color-brand-900: #164529;
+    --color-brand-950: #0b2615;
+
+    /* Ink — near-black with a cool green undertone, from the logo mark */
+    --color-ink-50: #f5f7f6;
+    --color-ink-100: #e6eae8;
+    --color-ink-200: #cdd5d1;
+    --color-ink-300: #a8b5af;
+    --color-ink-400: #7c8d85;
+    --color-ink-500: #61726a;
+    --color-ink-600: #4c5b54;
+    --color-ink-700: #3f4a45;
+    --color-ink-800: #353e3a;
+    --color-ink-900: #23292b;
+    --color-ink-950: #121716;
+
+    --shadow-soft: 0 10px 40px -12px rgb(18 23 22 / 0.12);
+    --shadow-card: 0 4px 24px -6px rgb(18 23 22 / 0.10);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        @apply font-sans text-ink-700 bg-white antialiased;
+    }
+
+    ::selection {
+        @apply bg-brand-500 text-white;
+    }
+}
+
+@layer components {
+    .container-x {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+    }
+
+    .btn-primary,
+    .btn-dark,
+    .btn-white,
+    .btn-outline {
+        @apply inline-flex items-center justify-center gap-2 rounded-full font-bold transition-all duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 cursor-pointer active:scale-[0.98];
+    }
+
+    .btn-primary {
+        @apply bg-brand-600 text-white hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-600/25;
+    }
+
+    .btn-dark {
+        @apply bg-ink-950 text-white hover:bg-ink-800;
+    }
+
+    .btn-white {
+        @apply bg-white text-ink-950 hover:bg-brand-50;
+    }
+
+    .btn-outline {
+        @apply border-2 border-ink-200 text-ink-800 hover:border-brand-500 hover:text-brand-700;
+    }
+
+    .btn-lg {
+        @apply px-7 py-3.5 text-base;
+    }
+
+    .btn-md {
+        @apply px-5 py-2.5 text-sm;
+    }
+
+    .kicker {
+        @apply inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-600;
+    }
+
+    .kicker::before {
+        content: '';
+        @apply inline-block h-0.5 w-6 rounded-full bg-brand-500;
+    }
+
+    .section-title {
+        @apply mt-3 text-3xl font-extrabold tracking-tight text-ink-950 sm:text-4xl;
+    }
+
+    .card-icon {
+        @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition-colors duration-300;
+    }
+}
+
+@layer utilities {
+
+    /* Scroll-reveal (activated by IntersectionObserver in app.js) */
+    .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal {
+            opacity: 1;
+            transform: none;
+            transition: none;
+        }
+    }
+
+    /* FAQ accordion chevron */
+    details.faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details.faq-item[open] .faq-chevron {
+        transform: rotate(180deg);
+    }
+
+    /* Mobile nav panel */
+    .nav-panel {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s ease;
+    }
+
+    .nav-panel.is-open {
+        grid-template-rows: 1fr;
+    }
+
+    .nav-panel>div {
+        overflow: hidden;
+    }
 }
